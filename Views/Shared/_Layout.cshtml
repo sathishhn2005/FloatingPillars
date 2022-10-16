@@ -32,9 +32,6 @@
 
     <!-- Modernizr JS -->
     <script src="~/Content/js/vendor/modernizr-2.8.3.min.js"></script>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-
 
 </head>
 <body>
@@ -209,7 +206,6 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
         @RenderBody()
         <hr />
         <!-- Start footer area -->
@@ -321,7 +317,6 @@
         @*<footer>
                 <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
             </footer>*@
-    </div>
 
     <!-- Placed js at the end of the document so the pages load faster -->
     <!-- jquery latest version -->
@@ -333,7 +328,7 @@
     <!-- ajax-mail js -->
     <script src="~/Content/js/ajax-mail.js"></script>
     <!-- All js plugins included in this file. -->
-    <script src="~/Content/~/Content/js/plugins.js"></script>
+    <script src="~/Content/js/plugins.js"></script>
 
     <!-- Main js file that contents all jQuery plugins activation. -->
     <script src="~/Content/js/main.js"></script>
@@ -341,4 +336,5 @@
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
+
 </html>
